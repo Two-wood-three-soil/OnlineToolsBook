@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dunkin-bucket-finder.pages.dev/sitemap.xml

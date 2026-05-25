@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dunkin Bucket Locations Finder | Check Nearby Dunkin Stores</title>
+    <meta name="description" content="Find nearby Dunkin stores to check for limited bucket availability. Enter a ZIP code or city and get a quick call checklist, map search, and availability notes.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://dunkin-bucket-finder.pages.dev/">
+    <meta property="og:title" content="Dunkin Bucket Locations Finder">
+    <meta property="og:description" content="Check nearby Dunkin stores, get a quick availability script, and open the right map search.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dunkin-bucket-finder.pages.dev/">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Dunkin Bucket Locations Finder",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any",
+        "url": "https://dunkin-bucket-finder.pages.dev/",
+        "description": "A quick lookup tool for finding nearby Dunkin stores to check limited bucket availability."
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Dunkin Bucket Finder home">
+        <span class="brand-mark">D</span>
+        <span>Dunkin Bucket Finder</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#checker">Checker</a>
+        <a href="#tips">Tips</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="checker">
+        <div class="hero-copy">
+          <p class="eyebrow">Limited merch lookup</p>
+          <h1>Dunkin Bucket Locations Finder</h1>
+          <p class="lede">Enter your ZIP code or city to get a fast store-check plan for Dunkin bucket availability near you.</p>
+        </div>
+
+        <form class="finder-panel" id="finder-form">
+          <label for="location-input">ZIP code or city</label>
+          <div class="search-row">
+            <input id="location-input" name="location" type="text" autocomplete="postal-code" placeholder="e.g. 10001 or Boston" required>
+            <button type="submit">Check</button>
+          </div>
+          <p class="form-note">This MVP does not claim live inventory. It helps you find the fastest stores to call or visit.</p>
+        </form>
+      </section>
+
+      <section class="ad-band" aria-label="Advertisement">
+        <div class="ad-slot" data-adsterra-placeholder>
+          <span>Advertisement</span>
+        </div>
+      </section>
+
+      <section class="results-section" id="results" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Your lookup</p>
+          <h2 id="result-title">Nearby Dunkin bucket check</h2>
+        </div>
+        <div class="result-grid">
+          <article class="result-card primary-result">
+            <h3>Best next action</h3>
+            <p id="recommendation">Open the map search and call the closest stores before visiting.</p>
+            <div class="action-row">
+              <a id="maps-link" class="button-link" href="#" target="_blank" rel="noopener">Open map search</a>
+              <button id="copy-script" type="button">Copy call script</button>
+            </div>
+          </article>
+
+          <article class="result-card">
+            <h3>Call script</h3>
+            <p id="call-script">Hi, do you currently have the Dunkin bucket in stock, and is there a purchase limit?</p>
+          </article>
+
+          <article class="result-card">
+            <h3>Availability status</h3>
+            <p><strong id="status-label">Unknown</strong></p>
+            <p id="status-note">Most limited merch varies by franchise and shipment timing. Ask stores directly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tool-section" id="tips">
+        <div class="section-heading">
+          <p class="eyebrow">Fastest way to verify</p>
+          <h2>Use this before driving</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Search close stores</h3>
+            <p>Use the map link, sort by distance, and open the first three nearby Dunkin locations.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Call first</h3>
+            <p>Ask whether the bucket is in stock, whether it is display-only, and whether there is a purchase requirement.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Confirm timing</h3>
+            <p>If sold out, ask when the next shipment usually arrives. Morning checks often work better for limited items.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ad-band" aria-label="Advertisement">
+        <div class="ad-slot ad-slot-small" data-adsterra-placeholder>
+          <span>Advertisement</span>
+        </div>
+      </section>
+
+      <section class="tool-section faq" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Dunkin bucket availability</h2>
+        </div>
+        <details>
+          <summary>Does this page show live Dunkin inventory?</summary>
+          <p>No. It is a fast lookup tool for finding the right stores to call. Live limited-item inventory usually depends on each franchise location.</p>
+        </details>
+        <details>
+          <summary>What should I ask the store?</summary>
+          <p>Ask whether the bucket is in stock, whether it is available today, whether a drink or meal purchase is required, and whether there is a limit per customer.</p>
+        </details>
+        <details>
+          <summary>Why can availability change so quickly?</summary>
+          <p>Limited merch can sell out, arrive late, or be handled differently by individual stores. Calling first saves the trip.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>Updated May 25, 2026. Independent lookup tool. Not affiliated with Dunkin'.</p>
+      <a href="/privacy.html">Privacy</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
